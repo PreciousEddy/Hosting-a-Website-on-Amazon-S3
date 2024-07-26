@@ -54,7 +54,7 @@ Next, I uploaded my website’s files into my S3 bucket.
 
 There were two files to upload:
 - `index.html`: The main HTML file that serves as the homepage.
-- `assets/style.css`: The CSS file that styles the HTML content.
+- `NextWork - Everyone should be in a job they love_files`: The CSS file that styles the HTML content and some of the Js files.
 
 These two files are related because the HTML file references the CSS file to apply the desired styling to the webpage.
 
@@ -71,21 +71,32 @@ To enable website hosting, I:
 Once static website hosting is enabled, S3 produces a bucket endpoint URL. This URL allows users to access the hosted website.
 
 ## Diagrams
-- **Setup Diagram:** ![Setup Diagram](diagrams/setup-diagram.png)
-- **Workflow Diagram:** ![Workflow Diagram](diagrams/workflow-diagram.png)
+<div align="center">
+    <p><strong>Setup Diagram:</strong></p>
+    <img src="Images/files.png" alt="Setup Diagram" width="500">
+</div>
+
+<div align="center">
+    <p><strong>Workflow Diagram:</strong></p>
+    <img src="Images/s3-architecture.png" alt="Workflow Diagram" width="500">
+</div>
 
 ## An Error!
 
 When I visited the bucket endpoint URL, I saw a "403 Forbidden" error on my browser.
 
-![Error Screenshot 1](errors/error-screenshot-1.png)
+![Error Screenshot 1](error/error-screenshot-1.png)
 
 The reason for this error was that the bucket policy was not configured to allow public access to the objects.
-
-![Error Screenshot 2](errors/error-screenshot-2.png)
 
 ## My Key Learnings
 - Setting up a static website on Amazon S3 is straightforward but requires careful attention to permissions and bucket policies.
 - Ensuring public access settings are correctly configured is crucial for website accessibility.
 - Versioning in S3 can help manage changes and provide data protection.
 
+## Result🔥
+
+<div align="center">
+    <p><strong>Webiste Result:</strong></p>
+    <img src="Images/Website.png" alt="Website" width="2000">
+</div>
